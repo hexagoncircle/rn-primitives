@@ -15,6 +15,7 @@ const Root = ({
   return (
     <Component
       role={decorative ? 'presentation' : 'separator'}
+      aria-hidden={!!decorative}
       aria-orientation={decorative ? undefined : orientation}
       ref={ref}
       {...props}
